@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Survey for Customers</title>
+   <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   background-color: lightgreen ;
+}
+h1
+{ font-size : xx-large;
+  text-align:center ;
+  color : darkgreen;
+}
+.Box1 {
+    margin-left:480px ;
+    margin-top: 50px;
+    box-shadow: 5px 5px 10px darkgreen ;
+    width: 600px;
+    height: 600px;
+    border: 2px solid white;
+    border-radius: 5%;
+    display: flex ;
+    justify-content: center ;
+    align-items:center;
+}
+.name
+{
+    font-size: xx-large;
+    font-weight: bold;
+    color:rgb(62, 56, 56) ;
+}
+.mail
+{
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(62, 56, 56);
+}
+.feedback
+{
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(62, 56, 56) ;
+}
+.submit
+{
+align-self:center;
+ }
+#fullName
+{
+    width: 350px;
+    height: 35px;
+    font-size: large;
+border: 0.5px solid black; border-radius: 3%;
+    font-family: Georgia, 'Times New Roman', Times, serif ;  
+}
+#feedback
+{
+    width: 352px;
+    height: 202px;
+    font-size: large;
+    border: 0.5px solid black; border-radius: 3%;
+    font-family: Georgia, 'Times New Roman', Times, serif;    
+}
+#email
+{
+    width: 350px;
+    height: 35px;
+    font-size: large;
+   border: 0.5px solid black; border-radius: 3%;
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+}
+#surveysubmit
+{  
+font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    background-color : darkgreen;
+    border : 2px solid black;
+    border-radius:5%;
+    width:120px; height:50px ;
+}
+   </style>
+</head>
+<body>
+    <h1>ONLINE  SURVEY</h1>
+    <hr style="color: white;">
+    <div class="Box1">
+    <form action="SurveyServlet" method = "post" name="form">
+            <div class="name">
+                Name
+                <br><input id="fullName" type="text" name="fullnames" placeholder="Enter Your Full-Name">
+            </div>
+            <div class="mail">
+                E-mail
+                <br><input id="email" type="email"  name="emails" placeholder="Enter Your Email">
+            </div>
+            <div class="feedback">
+                How Satisfied are you with our service?
+                <br><textarea id="feedback" cols="30" rows="10" name="feedbacks"placeholder="Give Your Valuable Feedback"></textarea>
+            </div>
+            <div class=submit>
+            <button type="submit" id="surveysubmit" name="survey-submit">Submit</button>
+            </div>
+    </form>
+    </div>
+</body>
+
+</html>
